@@ -4,6 +4,8 @@ Interactive Django architecture visualizer and tutorial — same product shape a
 [learnGitBranching](https://github.com/pcottle/learnGitBranching): a client-side
 sandbox, live graph, leveled challenges, and command golf.
 
+**Live:** https://alisadeghiaghili.github.io/learn-django/
+
 Type Django-shaped commands in the terminal. The multi-lane graph rewires as the
 project grows. Run `request /blog/` and watch a pulse travel URL → View → Model → Template.
 
