@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LearnDjango — interactive Django architecture lab</title>
+    <meta
+      name="description"
+      content="Interactive Django visualization and tutorial. Type commands, watch the architecture graph rewire, clear levels with command golf."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-mode="sandbox">
+    <header class="topbar">
+      <div class="brand">Learn<span>Django</span></div>
+      <nav>
+        <button type="button" class="ghost" id="btn-levels">levels</button>
+        <button type="button" class="ghost" id="btn-sandbox">sandbox</button>
+        <button type="button" class="ghost" id="btn-hint">hint</button>
+        <button type="button" class="ghost" id="btn-undo">undo</button>
+        <button type="button" class="ghost" id="btn-reset">reset</button>
+      </nav>
+      <div id="level-title">Sandbox</div>
+      <div class="spacer"></div>
+      <div id="status-line">no project</div>
+      <div id="golf">commands 0</div>
+    </header>
+
+    <main class="stage" aria-label="Architecture graph">
+      <svg id="graph" role="img" aria-label="Live Django architecture graph"></svg>
+    </main>
+
+    <section class="goal-panel" id="goal-panel" aria-live="polite"></section>
+
+    <section class="terminal" aria-label="Command terminal">
+      <div id="terminal-log" role="log" aria-live="polite" aria-relevant="additions"></div>
+      <div class="term-row">
+        <span class="prompt">$</span>
+        <input
+          id="terminal-input"
+          type="text"
+          spellcheck="false"
+          autocomplete="off"
+          aria-label="Django command"
+          placeholder="startproject mysite"
+        />
+      </div>
+    </section>
+
+    <div id="dialog" hidden></div>
+
+    <script src="js/engine.js"></script>
+    <script src="js/levels.js"></script>
+    <script src="js/viz.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

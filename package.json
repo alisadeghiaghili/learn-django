@@ -1,0 +1,11 @@
+{
+  "name": "learn-django",
+  "version": "1.0.0",
+  "description": "Interactive Django architecture visualizer and tutorial with levels and command golf.",
+  "private": true,
+  "scripts": {
+    "test": "node tests/engine.test.js",
+    "test:ui": "node tests/ui.smoke.js"
+  },
+  "license": "MIT"
+}
