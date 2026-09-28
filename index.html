@@ -8,11 +8,17 @@
       name="description"
       content="Interactive Django visualization and tutorial. Type commands, watch the architecture graph rewire, clear levels with command golf."
     />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/favicon.png" type="image/png" sizes="64x64" />
+    <link rel="apple-touch-icon" href="assets/favicon.png" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body data-mode="sandbox">
     <header class="topbar">
-      <div class="brand">Learn<span>Django</span></div>
+      <div class="brand">
+        <img class="brand-mark" src="assets/django-badge.svg" width="56" height="24" alt="Django" />
+        <span>Learn<span class="accent">Django</span></span>
+      </div>
       <nav>
         <button type="button" class="ghost" id="btn-levels">levels</button>
         <button type="button" class="ghost" id="btn-sandbox">sandbox</button>
